@@ -9,7 +9,7 @@ import net.minecraft.util.math.Direction
 import net.minecraft.util.shape.VoxelShape
 import net.minecraft.util.shape.VoxelShapes
 
-class TableBlock(variant: BlockVariant) : AbstractTableBlock(variant.createSettings()), BlockWithDescription {
+class TableBlock(variant: BlockVariant) : AbstractTableBlock(createSettings(variant)), BlockWithDescription {
     override val sittingYOffset = 0.6
     override val sittingStat: Identifier? = null
     override val descriptionKey = "block.adorn.table.description"
@@ -109,5 +109,9 @@ class TableBlock(variant: BlockVariant) : AbstractTableBlock(variant.createSetti
                 }
             )
         }
+
+        private fun createSettings(variant: BlockVariant) =
+            variant.createSettings()
+                .solid()
     }
 }
