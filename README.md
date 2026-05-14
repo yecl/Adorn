@@ -2,6 +2,10 @@
 
 # Adorn
 
+> This fork's default branch targets Minecraft 1.20.1 Forge.
+> It includes the upstream `Fix tables not being solid` backport from Adorn commit `9b7e24f34`.
+> GitHub Actions builds this branch with Gradle; the Forge jar is produced from the `forge` module.
+
 [![](https://img.shields.io/github/license/Juuxel/Adorn.svg)](LICENSE) [![](https://img.shields.io/github/release/Juuxel/Adorn.svg)](https://github.com/Juuxel/Adorn/releases) ![](http://cf.way2muchnoise.eu/versions/minecraft_adorn_all.svg) [![](http://cf.way2muchnoise.eu/adorn.svg)](https://minecraft.curseforge.com/projects/adorn)
 
 *Decorate your home!* • [Downloads](https://github.com/Juuxel/Adorn/releases) • [CurseForge](https://minecraft.curseforge.com/projects/adorn)
